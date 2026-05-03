@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>竞赛详情 - 索奥科技</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { primary: '#F98B9E', secondary: '#FF5E7D', light: '#FFF5F7', dark: '#2D2A2E' } } }
+    }
+  </script>
+  <style>
+    .section-fade { animation: fadeIn 0.6s ease forwards; }
+    .nav-active { color: #FF5E7D !important; font-weight: 600; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body class="bg-light font-sans">
+  <header class="fixed w-full bg-white shadow-sm z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-primary font-bold text-xl">索奥科技</a>
+      <nav class="hidden md:flex gap-6">
+        <a href="index.html" class="text-dark hover:text-secondary">主页</a>
+        <a href="list.html" class="text-dark hover:text-secondary">竞赛列表</a>
+        <a href="detail.html" class="nav-active">详情介绍</a>
+        <a href="index.html#contact" class="text-dark hover:text-secondary">加入我们</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="pt-28 pb-20 section-fade">
+    <div class="container mx-auto px-4 max-w-3xl">
+      <h2 class="text-2xl font-bold mb-4">竞赛详情介绍</h2>
+      <img src="https://picsum.photos/id/180/800/400" class="w-full rounded-xl mb-6">
+      <p class="text-gray-700 mb-4">索奥科技专注大学生学科竞赛指导，由丁少杰、白琳老师带队，地址位于海淀学院路30号。</p>
+      <p class="text-gray-700 mb-4">我们提供集训、项目指导、备赛方案，帮助成员斩获国家级、省级奖项，助力保研、就业、综测加分。</p>
+      <div class="bg-white p-4 rounded-lg border border-pink-200">
+        <h4 class="font-bold mb-2">核心优势</h4>
+        <ul class="text-gray-600 list-disc pl-5">
+          <li>导师：丁少杰、白琳</li>
+          <li>地址：海淀学院路30号</li>
+          <li>全覆盖竞赛项目</li>
+          <li>项目实战 + 保研就业指导</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white py-6 text-center">
+    <p>© 2025 索奥科技</p>
+  </footer>
+</body>
+</html>

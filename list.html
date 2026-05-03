@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>竞赛项目列表 - 索奥科技</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { primary: '#F98B9E', secondary: '#FF5E7D', light: '#FFF5F7', dark: '#2D2A2E' } } }
+    }
+  </script>
+  <style>
+    .section-fade { animation: fadeIn 0.6s ease forwards; }
+    .nav-active { color: #FF5E7D !important; font-weight: 600; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body class="bg-light font-sans">
+  <header class="fixed w-full bg-white shadow-sm z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-primary font-bold text-xl">索奥科技</a>
+      <nav class="hidden md:flex gap-6">
+        <a href="index.html" class="text-dark hover:text-secondary">主页</a>
+        <a href="list.html" class="nav-active">竞赛列表</a>
+        <a href="detail.html" class="text-dark hover:text-secondary">详情介绍</a>
+        <a href="index.html#contact" class="text-dark hover:text-secondary">加入我们</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="pt-28 pb-20 section-fade">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold text-center mb-10">竞赛项目列表</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all">
+          <h3 class="font-bold mb-2">互联网+大学生创新创业大赛</h3>
+          <p class="text-sm text-gray-600 mb-4">顶级赛事 · 国家级</p>
+          <a href="detail.html" class="text-primary">查看详情 →</a>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all">
+          <h3 class="font-bold mb-2">挑战杯</h3>
+          <p class="text-sm text-gray-600 mb-4">科技竞赛 · 国家级</p>
+          <a href="detail.html" class="text-primary">查看详情 →</a>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all">
+          <h3 class="font-bold mb-2">大学生创新创业训练计划</h3>
+          <p class="text-sm text-gray-600 mb-4">项目实践 · 高认可度</p>
+          <a href="detail.html" class="text-primary">查看详情 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white py-6 text-center">
+    <p>© 2025 索奥科技</p>
+  </footer>
+</body>
+</html>
